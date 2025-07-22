@@ -1,0 +1,603 @@
+{
+  "address": "0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6",
+  "name": "weusd_cross_chain_gas",
+  "friends": [],
+  "exposed_functions": [
+    {
+      "name": "addSupportedChain",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256"
+      ],
+      "return": []
+    },
+    {
+      "name": "archive_and_delete_source_request",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256"
+      ],
+      "return": []
+    },
+    {
+      "name": "archive_and_delete_target_request",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256"
+      ],
+      "return": []
+    },
+    {
+      "name": "batchGetRequestById",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "vector<u256>"
+      ],
+      "return": [
+        "vector<0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::RequestData>"
+      ]
+    },
+    {
+      "name": "batchMintWeUSDCrossChain",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "vector<u256>",
+        "vector<u256>",
+        "vector<u64>",
+        "vector<address>",
+        "vector<0x1::string::String>"
+      ],
+      "return": []
+    },
+    {
+      "name": "batchRequestExists",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "vector<u256>"
+      ],
+      "return": [
+        "vector<bool>"
+      ]
+    },
+    {
+      "name": "batch_archive_and_delete_source_requests",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "vector<u256>"
+      ],
+      "return": []
+    },
+    {
+      "name": "batch_archive_and_delete_target_requests",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "vector<u256>"
+      ],
+      "return": []
+    },
+    {
+      "name": "burnWeUSDCrossChain",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256",
+        "u64",
+        "0x1::string::String"
+      ],
+      "return": []
+    },
+    {
+      "name": "getRequestByCount",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "u256"
+      ],
+      "return": [
+        "0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::RequestData"
+      ]
+    },
+    {
+      "name": "getRequestById",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "u256"
+      ],
+      "return": [
+        "0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::RequestData"
+      ]
+    },
+    {
+      "name": "getRequestCount",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u256"
+      ]
+    },
+    {
+      "name": "getRequestsFromCount",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "u256",
+        "u64",
+        "u64"
+      ],
+      "return": [
+        "vector<0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::RequestData>",
+        "u256"
+      ]
+    },
+    {
+      "name": "getUserSourceRequests",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "address",
+        "u64",
+        "u64"
+      ],
+      "return": [
+        "vector<u256>",
+        "u64"
+      ]
+    },
+    {
+      "name": "getUserTargetRequests",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "address",
+        "u64",
+        "u64"
+      ],
+      "return": [
+        "vector<u256>",
+        "u64"
+      ]
+    },
+    {
+      "name": "initialize",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer"
+      ],
+      "return": []
+    },
+    {
+      "name": "is_initialized",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "bool"
+      ]
+    },
+    {
+      "name": "is_paused",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "bool"
+      ]
+    },
+    {
+      "name": "mintWeUSDCrossChain",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256",
+        "u256",
+        "u64",
+        "address",
+        "0x1::string::String"
+      ],
+      "return": []
+    },
+    {
+      "name": "pause",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer"
+      ],
+      "return": []
+    },
+    {
+      "name": "removeChainGasfee",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256"
+      ],
+      "return": []
+    },
+    {
+      "name": "removeSupportedChain",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256"
+      ],
+      "return": []
+    },
+    {
+      "name": "requestExists",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "u256"
+      ],
+      "return": [
+        "bool"
+      ]
+    },
+    {
+      "name": "setChainGasfee",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u256",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "setFeeRateBasisPoints",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "setFeeRecipient",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "setGasfee",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "set_cross_chain_minter_role",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "unpause",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer"
+      ],
+      "return": []
+    }
+  ],
+  "structs": [
+    {
+      "name": "CrossChainBurn",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "requestId",
+          "type": "u256"
+        },
+        {
+          "name": "localUser",
+          "type": "address"
+        },
+        {
+          "name": "outerUser",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "sourceChainId",
+          "type": "u256"
+        },
+        {
+          "name": "targetChainId",
+          "type": "u256"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "CrossChainMint",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "requestId",
+          "type": "u256"
+        },
+        {
+          "name": "localUser",
+          "type": "address"
+        },
+        {
+          "name": "outerUser",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "sourceChainId",
+          "type": "u256"
+        },
+        {
+          "name": "targetChainId",
+          "type": "u256"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "EventHandles",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "cross_chain_burn_events",
+          "type": "0x1::event::EventHandle<0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::CrossChainBurn>"
+        },
+        {
+          "name": "cross_chain_mint_events",
+          "type": "0x1::event::EventHandle<0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::CrossChainMint>"
+        },
+        {
+          "name": "source_request_archived_deleted_events",
+          "type": "0x1::event::EventHandle<0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::SourceRequestArchivedAndDeleted>"
+        },
+        {
+          "name": "target_request_archived_deleted_events",
+          "type": "0x1::event::EventHandle<0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::TargetRequestArchivedAndDeleted>"
+        }
+      ]
+    },
+    {
+      "name": "GlobalManage",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "requestCount",
+          "type": "u256"
+        },
+        {
+          "name": "gasfee",
+          "type": "u64"
+        },
+        {
+          "name": "feeRateBasisPoints",
+          "type": "u64"
+        },
+        {
+          "name": "chainGasFees",
+          "type": "0x1::smart_table::SmartTable<u256, u64>"
+        },
+        {
+          "name": "feeRecipient",
+          "type": "address"
+        },
+        {
+          "name": "activeSourceRequests",
+          "type": "vector<u256>"
+        },
+        {
+          "name": "activeTargetRequests",
+          "type": "vector<u256>"
+        },
+        {
+          "name": "requests",
+          "type": "0x1::smart_table::SmartTable<u256, 0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas::RequestData>"
+        },
+        {
+          "name": "requestIdToSourceActiveIndex",
+          "type": "0x1::smart_table::SmartTable<u256, u256>"
+        },
+        {
+          "name": "requestIdToTargetActiveIndex",
+          "type": "0x1::smart_table::SmartTable<u256, u256>"
+        },
+        {
+          "name": "supportedChains",
+          "type": "0x1::smart_table::SmartTable<u256, bool>"
+        },
+        {
+          "name": "cross_mint_role_contract",
+          "type": "address"
+        },
+        {
+          "name": "paused",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "RequestData",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "requestId",
+          "type": "u256"
+        },
+        {
+          "name": "localUser",
+          "type": "address"
+        },
+        {
+          "name": "outerUser",
+          "type": "0x1::string::String"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "isburn",
+          "type": "bool"
+        },
+        {
+          "name": "targetChainId",
+          "type": "u256"
+        }
+      ]
+    },
+    {
+      "name": "SourceRequestArchivedAndDeleted",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "requestId",
+          "type": "u256"
+        }
+      ]
+    },
+    {
+      "name": "TargetRequestArchivedAndDeleted",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "requestId",
+          "type": "u256"
+        }
+      ]
+    }
+  ]
+}

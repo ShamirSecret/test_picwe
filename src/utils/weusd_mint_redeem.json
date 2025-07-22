@@ -1,0 +1,303 @@
+{
+  "address": "0xf50fb20e19060b543ae7e8c90e85d0cc30f3416406105dc0a7d2834c38e523fe",
+  "name": "weusd_mint_redeem",
+  "friends": [
+    "0xf50fb20e19060b543ae7e8c90e85d0cc30f3416406105dc0a7d2834c38e523fe::weusd_cross_chain"
+  ],
+  "exposed_functions": [
+    {
+      "name": "get_accumulated_fees",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "get_cross_chain_deficit",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "get_cross_chain_reserves",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "get_mint_state_fields",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "address",
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "name": "get_total_reserves",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "mintWeUSD",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "redeemWeUSD",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "reserve_stablecoin_for_cross_chain",
+      "visibility": "friend",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "return_stablecoin_from_cross_chain",
+      "visibility": "friend",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "set_fee_ratio",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "set_fee_recipient",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "set_min_amount",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "withdraw_cross_chain_reserves",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "withdraw_cross_chain_reserves_to_balancer",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    }
+  ],
+  "structs": [
+    {
+      "name": "AccumulatedFees",
+      "is_native": false,
+      "abilities": [
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "stablecoin_fees",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "BurnedWeUSD",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "receivedStablecoinAmount",
+          "type": "u64"
+        },
+        {
+          "name": "weUSDAmount",
+          "type": "u64"
+        },
+        {
+          "name": "fee",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "EventHandles",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "minted_weusd_events",
+          "type": "0x1::event::EventHandle<0xf50fb20e19060b543ae7e8c90e85d0cc30f3416406105dc0a7d2834c38e523fe::weusd_mint_redeem::MintedWeUSD>"
+        },
+        {
+          "name": "burned_weusd_events",
+          "type": "0x1::event::EventHandle<0xf50fb20e19060b543ae7e8c90e85d0cc30f3416406105dc0a7d2834c38e523fe::weusd_mint_redeem::BurnedWeUSD>"
+        }
+      ]
+    },
+    {
+      "name": "MintState",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "fee_recipient",
+          "type": "address"
+        },
+        {
+          "name": "fee_ratio",
+          "type": "u64"
+        },
+        {
+          "name": "stablecoin_reserves",
+          "type": "u64"
+        },
+        {
+          "name": "resource_signer_cap",
+          "type": "0x1::account::SignerCapability"
+        },
+        {
+          "name": "accumulated_fees",
+          "type": "0xf50fb20e19060b543ae7e8c90e85d0cc30f3416406105dc0a7d2834c38e523fe::weusd_mint_redeem::AccumulatedFees"
+        },
+        {
+          "name": "min_amount",
+          "type": "u64"
+        },
+        {
+          "name": "cross_chain_reserves",
+          "type": "u64"
+        },
+        {
+          "name": "cross_chain_deficit",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "MintedWeUSD",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "name": "costStablecoinAmount",
+          "type": "u64"
+        },
+        {
+          "name": "weUSDAmount",
+          "type": "u64"
+        },
+        {
+          "name": "fee",
+          "type": "u64"
+        }
+      ]
+    }
+  ]
+}

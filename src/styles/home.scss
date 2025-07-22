@@ -1,0 +1,113 @@
+@import "swiper/css";
+@import "swiper/css/autoplay";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.gold-coin-1 {
+  animation: float 3s ease-in-out infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.gold-coin-2 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+
+
+@keyframes jigsaw-hover {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) rotate(-2deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1.05) rotate(0deg);
+  }
+}
+.jigsaw-box {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    animation: jigsaw-hover 0.8s ease-in-out forwards;
+    z-index: 2000;
+  }
+}
+
+.move-box {
+  --clr: #15161B;
+  position: absolute;
+  bottom: 0;
+}
+.move-box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-bottom-right-radius: 60px;
+  box-shadow: 1px 25px 0 0 var(--clr);
+}
+.move-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-bottom-left-radius: 60px;
+  box-shadow: -1px 25px 0 0 var(--clr);
+}
+
+
+
+.mask-tl {
+  mask: radial-gradient(circle at bottom right, transparent var(--mask-rounded), black var(--mask-rounded));
+}
+.mask-tr {
+  mask: radial-gradient(circle at bottom left, transparent var(--mask-rounded), black var(--mask-rounded));
+}
+.mask-bl {
+  mask: radial-gradient(circle at top right, transparent var(--mask-rounded), black var(--mask-rounded));
+}
+.mask-br {
+  mask: radial-gradient(circle at top left, transparent var(--mask-rounded), black var(--mask-rounded));
+}
+
+@keyframes logoMove {
+  0% {
+    background-position: 0 0;
+  }
+  to {
+    background-position: calc(100vw - 100%) 0;
+  }
+}
+
+.section-1-logo {
+  animation: logoMove 35s linear infinite reverse;
+}
+.section-2-logo {
+  animation: logoMove 35s linear infinite;
+}

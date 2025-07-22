@@ -1,0 +1,260 @@
+{
+  "address": "0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d",
+  "name": "price_oracle",
+  "friends": [],
+  "exposed_functions": [
+    {
+      "name": "confirm_admin_transfer",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer"
+      ],
+      "return": []
+    },
+    {
+      "name": "get_admin",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "address"
+      ]
+    },
+    {
+      "name": "get_latest_price",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ]
+    },
+    {
+      "name": "get_price",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ]
+    },
+    {
+      "name": "get_price_confidence",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "get_price_expo",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ],
+      "return": [
+        "u8"
+      ]
+    },
+    {
+      "name": "get_price_timestamp",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "get_price_value",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "initiate_admin_transfer",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "address"
+      ],
+      "return": []
+    },
+    {
+      "name": "is_price_expo_negative",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+      ],
+      "return": [
+        "bool"
+      ]
+    },
+    {
+      "name": "set_price_valid_interval",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "update_price",
+      "visibility": "public",
+      "is_entry": true,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "&signer",
+        "u64",
+        "u8",
+        "bool",
+        "u64"
+      ],
+      "return": []
+    }
+  ],
+  "structs": [
+    {
+      "name": "Events",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "price_update_events",
+          "type": "0x1::event::EventHandle<0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::PriceUpdateEvent>"
+        }
+      ]
+    },
+    {
+      "name": "OracleStore",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "move_price",
+          "type": "0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::price_oracle::Price"
+        },
+        {
+          "name": "admin",
+          "type": "address"
+        },
+        {
+          "name": "pending_admin",
+          "type": "0x1::option::Option<address>"
+        },
+        {
+          "name": "price_valid_interval",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "Price",
+      "is_native": false,
+      "abilities": [
+        "copy",
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "value",
+          "type": "u64"
+        },
+        {
+          "name": "expo",
+          "type": "u8"
+        },
+        {
+          "name": "expo_is_negative",
+          "type": "bool"
+        },
+        {
+          "name": "last_update_time",
+          "type": "u64"
+        },
+        {
+          "name": "confidence",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "PriceUpdateEvent",
+      "is_native": false,
+      "abilities": [
+        "drop",
+        "store"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "price",
+          "type": "u64"
+        },
+        {
+          "name": "expo",
+          "type": "u8"
+        },
+        {
+          "name": "expo_is_negative",
+          "type": "bool"
+        },
+        {
+          "name": "timestamp",
+          "type": "u64"
+        },
+        {
+          "name": "confidence",
+          "type": "u64"
+        }
+      ]
+    }
+  ]
+}

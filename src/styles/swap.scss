@@ -1,0 +1,106 @@
+@import "swiper/css";
+@import "swiper/css/autoplay";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+/* 可以放在全局 CSS 或局部模块中 */
+.ant-input-number-input::placeholder {
+  color: #666666 !important;
+}
+
+.ant-input-number-out-of-range .ant-input-number-input-wrap input {
+  color: #fff !important;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+.ant-pagination {
+  .ant-pagination-item {
+    border-radius: 100%;
+    border: 1px solid #707070;
+    background-color: transparent;
+
+    a {
+      color: #707070;
+    }
+  }
+
+  .ant-pagination-item-active {
+    border: 1px solid #FFE450;
+    background-color: #FFE450;
+
+    a {
+      color: black;
+    }
+
+    &:hover {
+      border: 1px solid #FFE450;
+
+      a {
+        color: black;
+      }
+    }
+  }
+
+  .ant-pagination-prev {
+    overflow: hidden;
+    border: 1px solid #707070;
+    border-radius: 100%;
+
+    .ant-pagination-item-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .ant-pagination-next {
+    overflow: hidden;
+    border: 1px solid #707070;
+    border-radius: 100%;
+
+    .ant-pagination-item-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .ant-pagination-disabled {
+    border: 1px solid #c9c4c4;
+  }
+}
+
+.wallet-selector-modal {
+  .ant-modal-content {
+    background-color: #21252E;
+
+    .ant-modal-close {
+      color: #fff;
+    }
+
+    .wallet-menu-wrapper {
+      border-color: #666;
+    }
+
+    .ant-typography {
+      color: #fff;
+    }
+
+    .ant-collapse-header {
+      color: #fff !important;
+    }
+
+    .wallet-connect-button {
+      background-color: #FDDA35;
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}

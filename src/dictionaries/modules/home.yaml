@@ -1,0 +1,226 @@
+menu:
+  - label:
+      cn: 首页
+      en: Home
+  - label:
+      cn: 产品
+      en: Products
+    items:
+      - label:
+          cn: WEUSD
+          en: WEUSD
+        intro:
+          cn: 原生全链稳定币
+          en: Omnichain Native Stablecoin
+      - label:
+          cn: RWA
+          en: RWA
+        intro:
+          cn: 实体资产平台
+          en: Real World Assets
+      - label:
+          cn: Swap
+          en: Swap
+        intro:
+          cn: 全链交换（即将上线）
+          en: Omnichain Swap (Coming Soon)
+  - label:
+      cn: 资源
+      en: Resources
+    items:
+      - label:
+          cn: 关于PicWe
+          en: About PicWe
+      - label:
+          cn: 品牌资源包
+          en: Brand Assets
+  - label:
+      cn: 开发者
+      en: Developers
+    items:
+      - label:
+          cn: 技术文档
+          en: Documentation
+      - label:
+          cn: 审计报告
+          en: Audits
+  - label:
+      cn: 语言切换
+      en: Language
+    items:
+      - label:
+          cn: English
+          en: English
+      - label:
+          cn: Chinese
+          en: Chinese
+
+section1:
+  link:
+    cn: 来自Copariot Labs的一封信
+    en: A Letter from Copariot Labs
+  mTitle:
+    cn:
+      - 重构
+      - 全链流动性
+    en:
+      - Redefining
+      - Liquidity
+      - Across
+      - All Chains
+  title:
+    cn: 重构全链流动性
+    en:
+      - Redefining
+      - Liquidity
+      - Across
+      - All Chains
+  intro:
+    cn:
+      - PicWe 是全球⾸个将全链流动性与 RWA 平台融合的去中⼼化基础设施
+    en:
+      - PicWe is the world’s first decentralized infrastructure
+      - that unifies omni-chain
+      - liquidity with a comprehensive platform
+      - for Real-World Assets (RWA).
+  button:
+    cn: 开始启航
+    en: Set Sail
+section2:
+  title:
+    cn: 唤醒世界之图
+    en: Awakening the Map of Worlds
+  button:
+    cn: 发现地图
+    en: Uncover the Map
+  intro:
+    cn:
+      - 孤⽴的链，像未连接的岛屿｡ 在这⾥你是唤醒新时代的探路⼈｡
+      - 每⼀次交互，都是⼀次远航； 每⼀块拼图，都是重塑世界的关键｡
+      - 当航线拼接完整，⼀个⽆边､ 去中⼼化的链上世界即将浮现｡
+    en:
+      - Isolated chains are like uncharted islands, disconnected and waiting tobe explored.
+      - Here, you are the trailblazer awakening a new era.
+      - Every interaction is a voyage; every puzzle piece reshapes the world.
+      - When the routes finally connect, a boundless, decentralized on-chain world will emerge.
+  intro2:
+    cn: 启航吧，探险者｡ 你就是这场链上海图的缔造者｡
+    en: Set sail, explorer—you are the creator of this on-chain map.
+section3:
+  title1:
+    cn: ⽣态系统与技术
+    en: Ecosystem & Tech
+  intro1:
+    cn: 全链基建､ 现实⾦融､ 未来已来
+    en: Omnichain Infrastructure. Real-World Finance. One Seamless Future.
+  title:
+    cn: $PIC-由社区生态掌舵
+    en: $PIC for the Community
+  subtitle:
+    cn: 我们将向社区释放总计 3 亿枚 $PIC 代币，分阶段实现五⼤关键⾥程碑｡ 每个⾥程碑，都象征着我们在实现全链⽆缝流动性，将孤⽴的链融合为统⼀⽣态上的重要进展｡
+    en: A total of 300 million $PIC tokens will be released to the community as we navigate five essential milestones. Each milestone marks significant progress on our voyage toward realizing seamless omni-chain liquidity connecting every isolated chain into one cohesive ecosystem.
+  joinBtn:
+    cn: 发现宝藏
+    en: Find the Treasure
+
+section4:
+  title:
+    cn: 重新定义无缝流动性
+    en: Seamless Liquidity
+  intro:
+    cn: 您的全链 DeFi ⼯具套件  畅享⽆国界⾦融未来
+    en: One-stop suite for border-free DeFi on EVM and beyond.
+  list1:
+    item1:
+      title:
+        cn: WEUSD-全链原生稳定币
+        en: WEUSD
+      intro:
+        cn: 1 WEUSD 兑换1USDC，原链铸造与赎回
+        en: Omnichain Native Stablecoin <br/>1 WEUSD <>1USDC (On-chainmint & redeem)
+    item2:
+      title:
+        cn: RWA 投资平台
+        en: RWA Investment platform
+      intro:
+        cn: 7×24 实时结算，⽆需 KYC， 完全去中⼼化
+        en: 24/7 Real-TimeRWA Settlement —FullyDecentralized,No KYC Required.
+    item3:
+      title:
+        cn: IRO 资产发行平台
+        en: IRO Asset Launchpad
+      intro:
+        cn: 链上标准化的RWA 发⾏､ 分发与交易平台
+        en: A Standardized Model for Tokenizing <br/> RWAs —Unified Platform for Issuance,Distribution,and Trading.
+    item4:
+      title:
+        cn: RWA DEX
+        en: RWA DEX
+      intro:
+        cn: 以真实资产实现⻓期分红，重塑⾦融价值共创
+        en: Rediscover Finance —Capital Providers Share in Long Term Profits Through RWAs.
+    item5:
+      title:
+        cn: 全链Swap
+        en: Omnichain Swap
+      intro:
+        cn: 全链 Swap基于 CATM 模型的⽆缝跨链交易体验
+        en: Seamless Cross-Chain Asset Trading with CATM Model.
+
+  list2:
+    item1:
+      title:
+        cn: 去中心化与无桥架构
+        en: Decentralized & Bridgeless
+      intro:
+        cn: ⽆需依赖跨链桥接，⽤户资产始终掌控在⾃⼰钱包中， 显著降低跨链攻击⻛险
+        en: No bridges required —funds remain in users’wallets, minimizingcross-chain attack vectors.
+    item2:
+      title:
+        cn: 多链支持
+        en: Multi-Chain Ready
+      intro:
+        cn: 当前⽀持 Movement 与EVM 链，未来将扩展⾄Solana｡ ⼀站式接⼊,整合全链流动性
+        en: Supports Movement and EVM chains, with Solana integration coming soon.
+    item3:
+      title:
+        cn: 透明与开源
+        en: Transparent & Open
+      intro:
+        cn: 所有交互 100% 链上完成，开放 API 与合约代码，数据完全可验证､可追溯
+        en: 100% on-chain execution with open source APIs and contracts. All transactions are fully verifiable.
+    item4:
+      title:
+        cn: 社区驱动
+        en: Community-Driven
+      intro:
+        cn: $PIC 持有者共同治理⽣态发展⽅向与收益分配，真正实现⽤户共建共治
+        en: $PIC holders govern protocol decisions,roadmap, and revenue distribution — empowering the community.
+    item5:
+      title:
+        cn: 为 DApp 而生
+        en: Built for DApps
+      intro:
+        cn: 提供即插即⽤的全链流动性 API 与 WEUSD 结算层，快速赋能开发者部署跨链应⽤
+        en: Plug-and-play liquidity APIs and a WEUSD settlement layer enable rapid deployment of cross chain dApps.
+  moreBtn:
+    cn: 了解更多
+    en: Explore More
+
+
+footer:
+  trusted:
+    cn: 信任合作伙伴
+    en: Trusted by
+  title:
+    cn: 拼接碎片 凝聚价值
+    en: Be Part of Us
+  subtitle:
+    cn: 去中心化的航程 由你我共绘
+    en: Link the fragments, unite the value.
+  intro:
+    cn: 由建設者打造  為⽤⼾⽽⽣ ⸺ PicWe 連接 DeFi 與現實⾦融
+    en: Built by buliders, for community — PicWe connects DeFi with real-world finance.
+  joinText:
+    cn: 加入社群
+    en: Join the Crew

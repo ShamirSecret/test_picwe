@@ -1,0 +1,27 @@
+{
+  "name": "HashKey Chain",
+  "chain": "HSK",
+  "icon": "hashkey",
+  "rpc": [
+    "https://mainnet.hsk.xyz"
+  ],
+  "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "HSK",
+    "symbol": "HSK",
+    "decimals": 6
+  },
+  "infoURL": "https://docs.hsk.xyz",
+  "shortName": "hsk",
+  "chainId": 177,
+  "networkId": 177,
+  "slip44": 60,
+  "explorers": [
+    {
+      "name": "HashKey Chain Explorer",
+      "url": "https://explorer.hsk.xyz",
+      "standard": "EIP3091"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./font.css";
+
+
+:root {
+  background-color:#15161B;
+  color: white;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100% !important;
+}
+
+// 英文
+.font-en{
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.font-ms{
+  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// 中文
+.font-cn{
+  font-family: "SourceHanSansSC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:root{
+  --vh: 1vh;
+  --100vh: 100vh;
+  --primary-color: #FFC90F;
+  --secondary-color: #FFDA34;
+}
+body{
+  --100vh: calc(var(--vh) * 100);
+}
+.r-h-screen{
+  height: var(--100vh) important;
+}
+.r-min-h-screen{
+  min-height: var(--100vh);
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+// md
+@media screen and (min-width: 768px) and (max-width: 828px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 829px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+// lg
+@media screen and (min-width: 1024px) and (max-width: 1084px) {
+  .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1085px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+// xl
+@media screen and (min-width: 1280px) and (max-width: 1340px) {
+  .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1341px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+// 2xl
+@media screen and (min-width: 1536px) and (max-width: 1596px) {
+  .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1597px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+.mobile-menu-icon {
+  .line {
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    fill: none;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+
+    &:nth-child(1) {
+      stroke-dasharray: 40 160;
+    }
+
+    &:nth-child(2) {
+      stroke-dasharray: 40 142;
+      transform-origin: 50%;
+      transition: transform 400ms;
+    }
+
+    &:nth-child(3) {
+      stroke-dasharray: 40 85;
+      transform-origin: 50%;
+      transition: transform 400ms, stroke-dashoffset 400ms;
+    }
+  }
+
+  &.active {
+    transform: rotate(45deg);
+
+    .line {
+      &:nth-child(1) {
+        stroke-dashoffset: -64px;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(90deg);
+      }
+
+      &:nth-child(3) {
+        stroke-dashoffset: -64px;
+      }
+    }
+  }
+}
+
+.footer-card-mask {
+  mask: radial-gradient(circle at top right, transparent 45px, black 45px);
+}
+
+
+.indicator {
+  --clr: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 160px;
+  height: 80px;
+  background: var(--clr);
+  border-radius: 80px 80px 0 0;
+  transition: 0.5s;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -34px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-bottom-right-radius: 40px;
+  box-shadow: 2px 15px 0 0 var(--clr);
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -34px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-bottom-left-radius: 40px;
+  box-shadow: -2px 15px 0 0 var(--clr);
+}
+
+
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ant-input-number-input-wrap{
+  height: 100%;
+  line-height: 100%;
+  .ant-input-number-input{
+    height: 100%;
+    padding: 0;
+    color: inherit;
+    background: transparent;
+    border: none;
+    text-align: right;
+  }
+}
+.ant-input-number{
+  font-size: inherit;
+  &.text-center{
+    .ant-input-number-input{
+      text-align: center;
+    }
+  }
+  &.text-left {
+    .ant-input-number-input{
+      text-align: left;
+    }
+  }
+}
+.ant-input-number-outlined{
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  &:hover{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  &:focus-within{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  &:focus{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.wallet-modal-title {
+  display: none;
+}
+
+.aptos-connect-button {
+  display: none;
+}
+
+.about-aptos-connect-trigger-wrapper {
+  display: none;
+}
+
+.aptos-connect-privacy-policy-wrapper {
+  display: none;
+}
+
+.ant-modal-content {
+  .ant-modal-body {
+    .ant-flex {
+      .ant-divider {
+        display: none;
+      }
+    }
+  }
+}
+
+.evmwallet-content-btn {
+  border: 1px solid #FDDA35;
+  button {
+    background: transparent !important;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

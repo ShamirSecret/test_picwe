@@ -1,0 +1,93 @@
+{
+  "address": "0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6",
+  "name": "weusd",
+  "friends": [
+    "0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_cross_chain_gas",
+    "0xf39c2674014dc3b3af9fd77f31ac69aa9398d8031f2c13a73fccbaca65641ff6::weusd_mint_redeem"
+  ],
+  "exposed_functions": [
+    {
+      "name": "balance",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "address"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "burn",
+      "visibility": "friend",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "get_metadata",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "0x1::object::Object<0x1::fungible_asset::Metadata>"
+      ]
+    },
+    {
+      "name": "mint",
+      "visibility": "friend",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "total_supply",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u64"
+      ]
+    }
+  ],
+  "structs": [
+    {
+      "name": "ManagedFungibleAsset",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "mint_ref",
+          "type": "0x1::fungible_asset::MintRef"
+        },
+        {
+          "name": "transfer_ref",
+          "type": "0x1::fungible_asset::TransferRef"
+        },
+        {
+          "name": "burn_ref",
+          "type": "0x1::fungible_asset::BurnRef"
+        }
+      ]
+    }
+  ]
+}

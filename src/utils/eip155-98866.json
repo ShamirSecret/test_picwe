@@ -1,0 +1,33 @@
+{
+  "name": "Plume",
+  "chain": "PLUME",
+  "icon": "plume",
+  "rpc": [
+    "https://rpc.plume.org",
+    "wss://rpc.plume.org"
+  ],
+  "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "PLUME",
+    "symbol": "PLUME",
+    "decimals": 6
+  },
+  "infoURL": "https://docs.plume.org",
+  "shortName": "plume",
+  "chainId": 98866,
+  "networkId": 98866,
+  "slip44": 60,
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-1",
+    "bridges": []
+  },
+  "explorers": [
+    {
+      "name": "Plume Explorer",
+      "url": "https://explorer.plume.org",
+      "standard": "EIP3091"
+    }
+  ]
+}

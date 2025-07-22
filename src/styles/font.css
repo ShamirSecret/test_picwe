@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-LightItalic.woff2') format('woff2'),
+        url('/fonts/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('/fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('/fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    /* font-family: 'trebuchet_msregular'; */
+    font-family: 'Trebuchet MS';
+    src: url('/fonts/trebuchet_ms-webfont.woff2') format('woff2'),
+        url('/fonts/trebuchet_ms-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    /* font-family: 'trebuchet_msitalic'; */
+    font-family: 'Trebuchet MS';
+    src: url('/fonts/trebuchet_ms_italic-webfont.woff2') format('woff2'),
+        url('/fonts/trebuchet_ms_italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    /* font-family: 'trebuchet_msbold'; */
+    font-family: 'Trebuchet MS';
+    src: url('/fonts/trebuchet_ms_bold-webfont.woff2') format('woff2'),
+        url('/fonts/trebuchet_ms_bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    /* font-family: 'trebuchet_msbold_italic'; */
+    font-family: 'Trebuchet MS';
+    src: url('/fonts/trebuchet_ms_bold_italic-webfont.woff2') format('woff2'),
+        url('/fonts/trebuchet_ms_bold_italic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/************ 中文字体 start ************/
+@font-face {
+    font-family: 'SourceHanSansSC';
+    src: url('/fonts/SourceHanSansTWHK-Bold.woff2') format('woff2'),
+        url('/fonts/SourceHanSansTWHK-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SourceHanSansSC';
+    src: url('/fonts/SourceHanSansSC-Normal.woff2') format('woff2'),
+        url('/fonts/SourceHanSansSC-Normal.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SourceHanSansSC';
+    src: url('/fonts/SourceHanSansSC-Regular.woff2') format('woff2'),
+        url('/fonts/SourceHanSansSC-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SourceHanSansSC';
+    src: url('/fonts/SourceHanSansSC-Light.woff2') format('woff2'),
+        url('/fonts/SourceHanSansSC-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+/************ 中文字体 end ************/

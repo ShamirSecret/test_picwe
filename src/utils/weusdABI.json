@@ -1,0 +1,92 @@
+{
+  "address": "0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d",
+  "name": "weusd",
+  "friends": [
+    "0xed805e77c40d7e6ac5cd3e67514c485176621a2aa21e860cd515121d44a2f83d::weusd_operations"
+  ],
+  "exposed_functions": [
+    {
+      "name": "balance",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [
+        "address"
+      ],
+      "return": [
+        "u64"
+      ]
+    },
+    {
+      "name": "burn",
+      "visibility": "friend",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "get_metadata",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "0x1::object::Object<0x1::fungible_asset::Metadata>"
+      ]
+    },
+    {
+      "name": "mint",
+      "visibility": "friend",
+      "is_entry": false,
+      "is_view": false,
+      "generic_type_params": [],
+      "params": [
+        "address",
+        "u64"
+      ],
+      "return": []
+    },
+    {
+      "name": "total_supply",
+      "visibility": "public",
+      "is_entry": false,
+      "is_view": true,
+      "generic_type_params": [],
+      "params": [],
+      "return": [
+        "u64"
+      ]
+    }
+  ],
+  "structs": [
+    {
+      "name": "ManagedFungibleAsset",
+      "is_native": false,
+      "abilities": [
+        "key"
+      ],
+      "generic_type_params": [],
+      "fields": [
+        {
+          "name": "mint_ref",
+          "type": "0x1::fungible_asset::MintRef"
+        },
+        {
+          "name": "transfer_ref",
+          "type": "0x1::fungible_asset::TransferRef"
+        },
+        {
+          "name": "burn_ref",
+          "type": "0x1::fungible_asset::BurnRef"
+        }
+      ]
+    }
+  ]
+}
