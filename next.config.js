@@ -33,6 +33,13 @@ const nextConfig = {
         },
       ],
     })
+    
+    // 忽略 pino-pretty 模块以避免构建警告
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      'pino-pretty': false,
+    }
+    
     return config
   },
 
